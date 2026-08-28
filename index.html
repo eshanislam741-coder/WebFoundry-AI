@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SiteForge AI — Build a business website in minutes</title>
+<meta name="description" content="SiteForge AI turns your business information into a polished website in minutes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#05050b;--panel:#0d0d17;--panel2:#11111d;--text:#f7f7fb;--muted:#a3a4b5;--line:rgba(255,255,255,.09);--a:#9b5cff;--b:#19c8ff;--c:#ff3bd4;--good:#56f5c1}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 10%,rgba(155,92,255,.18),transparent 28%),radial-gradient(circle at 15% 30%,rgba(25,200,255,.08),transparent 24%),var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(to bottom,black,transparent 75%);z-index:-1}
+a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:auto}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.4px}.logo{width:34px;height:34px;border-radius:10px;background:conic-gradient(from 210deg,var(--b),var(--a),var(--c),var(--b));display:grid;place-items:center;box-shadow:0 0 28px rgba(155,92,255,.45)}.logo i{width:18px;height:18px;border-radius:6px;background:#080810;border:2px solid white;opacity:.9}.brand span{font-size:18px}.brand em{font-style:normal;color:#a66aff}.navlinks{display:flex;gap:28px;color:#b9bac8;font-size:13px}.navlinks a:hover{color:white}.navbtn,.primary{border:0;color:white;font-weight:700;border-radius:12px;background:linear-gradient(100deg,#9a34ff,#1aa9ff);box-shadow:0 8px 30px rgba(93,64,255,.25);cursor:pointer}.navbtn{padding:11px 16px;font-size:13px}
+.hero{padding:88px 0 70px;display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:8px 11px;border:1px solid rgba(166,106,255,.35);background:rgba(155,92,255,.08);border-radius:999px;color:#d9c5ff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px}.pulse{width:7px;height:7px;border-radius:50%;background:#73ffc9;box-shadow:0 0 12px #73ffc9}
+h1{font-family:"Space Grotesk";font-size:clamp(48px,6vw,76px);line-height:.98;letter-spacing:-4px;margin:22px 0}.gradient{background:linear-gradient(90deg,#fff 0%,#8cdfff 32%,#a26bff 66%,#ff7be8);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:17px;line-height:1.7;color:#aaaabd;max-width:560px}.actions{display:flex;gap:13px;align-items:center;margin-top:28px}.primary{padding:15px 21px;font-size:14px}.ghost{padding:14px 19px;border:1px solid var(--line);border-radius:12px;color:#d9d9e3;font-weight:600;font-size:14px;background:rgba(255,255,255,.025)}.trust{display:flex;gap:18px;margin-top:25px;color:#9293a5;font-size:12px}.trust b{color:#d8d8e0}
+.visual{position:relative}.orb{position:absolute;width:300px;height:300px;right:8%;top:5%;border-radius:50%;background:radial-gradient(circle,rgba(155,92,255,.3),transparent 62%);filter:blur(10px)}.browser{position:relative;transform:perspective(1000px) rotateY(-7deg) rotateX(2deg);border:1px solid rgba(181,127,255,.5);border-radius:20px;background:#0a0a11;box-shadow:0 0 80px rgba(126,64,255,.2),0 25px 80px rgba(0,0,0,.6);overflow:hidden}.topbar{height:38px;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 13px;gap:6px}.dot{width:7px;height:7px;border-radius:50%;background:#555}.site{padding:24px;background:linear-gradient(145deg,#10101a,#0a0a10);min-height:370px}.sitehead{display:flex;justify-content:space-between;align-items:center}.sitebrand{font-family:"Space Grotesk";font-weight:700}.sitehead span{font-size:10px;color:#aaa}.sitehero{margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center}.sitehero h3{font-family:"Space Grotesk";font-size:31px;line-height:1.05;margin:0 0 9px}.sitehero p{font-size:10px;line-height:1.6;color:#9293a3}.miniBtn{display:inline-block;background:#f2c37c;color:#15110a;border-radius:6px;padding:8px 10px;font-size:9px;font-weight:800}.coffee{height:190px;border-radius:13px;background:radial-gradient(circle at 60% 35%,#dca36f 0 8%,#623c2c 10% 18%,transparent 20%),linear-gradient(135deg,#38221c,#b67c52 45%,#20110e);box-shadow:inset 0 0 50px rgba(0,0,0,.4)}.float{position:absolute;padding:12px 14px;background:rgba(13,13,25,.9);border:1px solid rgba(255,255,255,.12);border-radius:12px;backdrop-filter:blur(10px);font-size:11px;box-shadow:0 14px 40px rgba(0,0,0,.35)}.float strong{display:block;font-size:12px;margin-bottom:3px}.float small{color:#8e90a4}.f1{right:-18px;top:18%}.f2{left:-28px;bottom:13%}.f3{right:4%;bottom:-28px}
+section{padding:88px 0}.sectionhead{text-align:center;max-width:680px;margin:0 auto 45px}.sectionhead .eyebrow{margin-bottom:13px}.sectionhead h2{font-family:"Space Grotesk";font-size:43px;letter-spacing:-2px;margin:0 0 12px}.sectionhead p{color:var(--muted);line-height:1.65}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:20px;padding:25px;position:relative;overflow:hidden}.card:after{content:"";position:absolute;width:100px;height:100px;right:-40px;top:-40px;border-radius:50%;background:rgba(155,92,255,.14);filter:blur(20px)}.num{font-family:"Space Grotesk";font-size:12px;color:#b68bff}.icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:rgba(155,92,255,.12);border:1px solid rgba(155,92,255,.24);font-size:19px;margin:18px 0}.card h3{margin:0 0 8px;font-size:17px}.card p{margin:0;color:#9293a4;font-size:13px;line-height:1.65}
+.demo{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}.demo h2{text-align:left}.check{display:flex;gap:9px;align-items:center;color:#bfc0ce;font-size:13px;margin:12px 0}.check b{color:var(--good)}.beforeafter{height:350px;border:1px solid var(--line);border-radius:20px;background:#0b0b12;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;box-shadow:0 25px 70px rgba(0,0,0,.35)}.before,.after{padding:22px}.before{background:#11111a}.label{font-size:9px;text-transform:uppercase;letter-spacing:1px;color:#77798c;margin-bottom:22px}.placeholder{border:1px dashed #3a3a49;border-radius:12px;padding:28px;color:#626375;margin-top:40px}.after{background:linear-gradient(145deg,#10101a,#0c1220);border-left:1px solid var(--line)}.after .mockhero{height:140px;border-radius:12px;background:linear-gradient(120deg,rgba(25,200,255,.22),rgba(155,92,255,.24)),url('');border:1px solid rgba(166,106,255,.2);padding:20px}.after h3{font-family:"Space Grotesk";font-size:24px;margin:0 0 8px}.after p{font-size:9px;color:#9c9dab;line-height:1.5}.bars{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:10px}.bar{height:50px;border-radius:9px;background:rgba(255,255,255,.045);border:1px solid var(--line)}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.price{padding:28px}.price.pop{border-color:#9a64ff;box-shadow:0 0 55px rgba(155,92,255,.12)}.tag{position:absolute;top:15px;right:15px;background:linear-gradient(90deg,#9b5cff,#c05cff);font-size:9px;padding:6px 8px;border-radius:999px;font-weight:800}.price h3{font-size:17px}.money{font-family:"Space Grotesk";font-size:42px;font-weight:700;margin:16px 0 4px}.money span{font-family:Inter;font-size:12px;color:#8d8e9f;font-weight:500}.price ul{list-style:none;padding:0;margin:25px 0}.price li{padding:8px 0;color:#a6a7b7;font-size:12px}.price li:before{content:"✓";color:#65eec4;margin-right:9px}.price button{width:100%}
+.cta{border:1px solid rgba(155,92,255,.25);border-radius:26px;padding:50px;text-align:center;background:radial-gradient(circle at 50% 0,rgba(155,92,255,.2),transparent 55%),rgba(255,255,255,.025)}.cta h2{font-family:"Space Grotesk";font-size:43px;letter-spacing:-2px;margin:0 0 12px}.cta p{color:#a1a2b1;margin-bottom:25px}.footer{border-top:1px solid var(--line);padding:30px 0;color:#747687;font-size:11px;display:flex;justify-content:space-between}
+
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(12px);z-index:20;padding:30px;overflow:auto}.modal.show{display:grid;place-items:center}.wizard{width:min(720px,100%);background:#0c0c15;border:1px solid rgba(255,255,255,.12);border-radius:24px;box-shadow:0 30px 100px #000;padding:30px}.wizardtop{display:flex;justify-content:space-between;align-items:center}.close{background:none;border:0;color:#888;cursor:pointer;font-size:22px}.progress{height:4px;background:#222330;border-radius:10px;margin:20px 0 30px;overflow:hidden}.progress i{display:block;height:100%;width:25%;background:linear-gradient(90deg,var(--a),var(--b));transition:.3s}.step{display:none}.step.active{display:block}.step h2{font-family:"Space Grotesk";font-size:31px;margin:0 0 7px}.step p{color:#9293a4;font-size:13px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:20px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:#aaaabb}.field input,.field textarea,.field select{background:#12121d;border:1px solid #28283a;color:white;border-radius:11px;padding:13px;outline:none;font:inherit;font-size:13px}.field textarea{min-height:100px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:#8051d9}.choices{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.choice{border:1px solid #29293a;background:#12121c;color:#b5b6c3;border-radius:12px;padding:12px 15px;cursor:pointer;font-size:12px}.choice.selected{border-color:#8f5cff;background:rgba(143,92,255,.13);color:white}.wizardactions{display:flex;justify-content:space-between;margin-top:25px}.wizardactions button{padding:12px 18px;border-radius:11px;font-weight:700;cursor:pointer}.next{border:0;color:white;background:linear-gradient(100deg,#9a34ff,#1aa9ff)}.back{border:1px solid var(--line);color:#bbb;background:#11111a}.build{display:none;text-align:center;padding:35px}.loader{width:62px;height:62px;border-radius:50%;border:3px solid #252536;border-top-color:#a766ff;border-right-color:#28c7ff;animation:spin 1s linear infinite;margin:10px auto 20px}@keyframes spin{to{transform:rotate(360deg)}}.build h2{font-family:"Space Grotesk"}.build p{color:#9697a8}.result{display:none}.result .preview{border:1px solid rgba(155,92,255,.4);border-radius:17px;padding:22px;background:linear-gradient(145deg,#10101b,#0b1018);margin-top:20px}.result .preview h3{font-family:"Space Grotesk";font-size:30px;margin:8px 0}.result .preview p{max-width:560px}.result .preview .mini{display:inline-block;padding:9px 12px;border-radius:8px;background:#fff;color:#111;font-size:11px;font-weight:800}.success{color:#64f2c2;font-size:12px;font-weight:700}
+
+.studio{border:1px solid rgba(155,92,255,.3);border-radius:22px;overflow:hidden;background:#090910;box-shadow:0 25px 80px rgba(0,0,0,.4)}
+.studio-toolbar{display:flex;justify-content:space-between;gap:15px;align-items:center;padding:14px 16px;border-bottom:1px solid var(--line);background:#0e0e18;font-size:12px}
+.studio-toolbar span{color:#707184;margin-left:5px}.studio-actions{display:flex;gap:8px}.studio-actions button{padding:9px 12px;font-size:11px}
+.generated-page{padding:34px;background:linear-gradient(180deg,#11111b,#08090f);min-height:650px}
+.gen-nav{display:flex;justify-content:space-between;align-items:center;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.gen-brand{font-family:"Space Grotesk";font-weight:700;font-size:16px}.gen-nav-links{font-size:10px;color:#9293a4}
+.gen-hero{padding:72px 0 60px;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
+.gen-hero h1{font-size:54px;letter-spacing:-3px;margin:0 0 14px}.gen-hero p{font-size:14px;line-height:1.7;color:#9d9eaf;max-width:560px}.gen-cta{display:inline-block;margin-top:13px;padding:12px 15px;border-radius:9px;background:linear-gradient(100deg,#9b5cff,#1ac8ff);font-size:11px;font-weight:800}
+.gen-visual{height:250px;border-radius:18px;border:1px solid rgba(155,92,255,.3);background:radial-gradient(circle at 65% 30%,rgba(25,200,255,.2),transparent 25%),radial-gradient(circle at 40% 60%,rgba(155,92,255,.25),transparent 35%),#0e0e18;box-shadow:inset 0 0 60px rgba(0,0,0,.4);display:grid;place-items:center;color:#bbb;font-size:12px}
+.gen-section{padding:42px 0;border-top:1px solid var(--line)}.gen-section h2{font-family:"Space Grotesk";font-size:28px;margin:0 0 10px}.gen-section>p{color:#9697a8;font-size:12px;line-height:1.7;max-width:750px}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}.service-card{padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025)}.service-card h3{font-size:13px;margin:0 0 7px}.service-card p{font-size:10px;color:#9293a4;line-height:1.6;margin:0}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.faq{padding:16px;border:1px solid var(--line);border-radius:13px}.faq strong{font-size:11px}.faq p{font-size:10px;line-height:1.55;color:#9293a4;margin:8px 0 0}
+.gen-contact{display:flex;justify-content:space-between;gap:20px;padding:22px;border-radius:15px;background:linear-gradient(100deg,rgba(155,92,255,.12),rgba(25,200,255,.07));border:1px solid var(--line);margin-top:22px;font-size:11px}.gen-contact span{color:#a0a1b0}
+@media(max-width:850px){.gen-hero{grid-template-columns:1fr}.service-grid,.faq-grid{grid-template-columns:1fr}.studio-toolbar{flex-direction:column;align-items:flex-start}}
+@media(max-width:850px){.navlinks{display:none}.hero,.demo{grid-template-columns:1fr}.hero{padding-top:55px}.visual{margin-top:15px}.steps,.pricing{grid-template-columns:1fr}.beforeafter{height:auto;grid-template-columns:1fr}.after{border-left:0;border-top:1px solid var(--line)}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.cta{padding:35px 20px}h1{letter-spacing:-2.5px}.sectionhead h2,.cta h2{font-size:35px}}
+</style>
+</head>
+<body>
+<header class="container nav">
+  <a class="brand" href="#"><div class="logo"><i></i></div><span>SITEFORGE <em>AI</em></span></a>
+  <nav class="navlinks"><a href="#how">How It Works</a><a href="#features">Features</a><a href="#pricing">Pricing</a></nav>
+  <button class="navbtn" onclick="openWizard()">Build My Website →</button>
+</header>
+
+<main>
+<section class="container hero">
+  <div>
+    <div class="eyebrow"><span class="pulse"></span> AI builds. You grow.</div>
+    <h1>The AI website builder that builds <span class="gradient">your business.</span></h1>
+    <p>Answer a few questions about your business. SiteForge turns your information into a polished, mobile-ready website designed to help you get customers.</p>
+    <div class="actions"><button class="primary" onclick="openWizard()">Create My Website ✦</button><a class="ghost" href="#how">See how it works</a></div>
+    <div class="trust"><span>✓ <b>No code</b></span><span>✦ <b>AI powered</b></span><span>▣ <b>Mobile ready</b></span><span>⌁ <b>SEO ready</b></span></div>
+  </div>
+  <div class="visual">
+    <div class="orb"></div>
+    <div class="browser">
+      <div class="topbar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+      <div class="site">
+        <div class="sitehead"><div class="sitebrand">LUNA CAFÉ</div><span>HOME　 MENU　 ABOUT　 CONTACT</span></div>
+        <div class="sitehero">
+          <div><h3>Good Coffee.<br>Great Vibes.</h3><p>Specialty coffee made with passion. Visit us or order online for pickup.</p><span class="miniBtn">Order Now</span></div>
+          <div class="coffee"></div>
+        </div>
+      </div>
+    </div>
+    <div class="float f1"><strong>✦ AI WRITING</strong><small>Perfect copy for your business</small></div>
+    <div class="float f2"><strong>✧ AI DESIGN</strong><small>Stunning design in seconds</small></div>
+    <div class="float f3"><strong>▣ AI IMAGES</strong><small>Professional visuals included</small></div>
+  </div>
+</section>
+
+<section id="how" class="container">
+  <div class="sectionhead"><div class="eyebrow">Easy as 1–2–3</div><h2>From info to <span class="gradient">incredible.</span></h2><p>No templates to fight with. Tell SiteForge about your business and let the AI handle the heavy lifting.</p></div>
+  <div class="steps">
+    <div class="card"><div class="num">01</div><div class="icon">☷</div><h3>Tell us about your business</h3><p>Enter your business name, services, location, contact details, goals and the style you want.</p></div>
+    <div class="card"><div class="num">02</div><div class="icon">✦</div><h3>AI builds your website</h3><p>SiteForge generates your structure, copy, calls-to-action and visual direction around your business.</p></div>
+    <div class="card"><div class="num">03</div><div class="icon">↗</div><h3>Customize & publish</h3><p>Review the result, make changes, connect your domain and put your new site online.</p></div>
+  </div>
+</section>
+
+<section id="features" class="container">
+  <div class="demo">
+    <div>
+      <div class="eyebrow">See the magic</div><div class="sectionhead" style="margin:15px 0 20px"><h2>Watch your website <span class="gradient">come to life.</span></h2><p>From a few simple answers to a complete business website with persuasive content and a modern layout.</p></div>
+      <div class="check"><b>✓</b> Professionally written content</div><div class="check"><b>✓</b> Beautiful, modern design</div><div class="check"><b>✓</b> Mobile responsive</div><div class="check"><b>✓</b> SEO-ready structure</div><div class="check"><b>✓</b> Fast and easy to update</div>
+    </div>
+    <div class="beforeafter"><div class="before"><div class="label">Before</div><div class="placeholder"><b>Your business</b><br><br>Basic information goes here.<br>We provide great services.</div></div><div class="after"><div class="label">After</div><div class="mockhero"><h3>Luna Café</h3><p>Specialty coffee, fresh pastries, and great vibes in your neighborhood.</p><span class="mini">Order online</span></div><div class="bars"><div class="bar"></div><div class="bar"></div><div class="bar"></div></div></div></div>
+  </div>
+</section>
+
+<section id="pricing" class="container">
+  <div class="sectionhead"><div class="eyebrow">Simple pricing</div><h2>Choose the plan that <span class="gradient">fits.</span></h2><p>Start small and upgrade when your business grows.</p></div>
+  <div class="pricing">
+    <div class="card price"><h3>Starter</h3><div class="money">$19 <span>/month</span></div><p style="color:#88899a;font-size:12px">For getting your business online.</p><ul><li>AI website builder</li><li>Custom domain</li><li>Mobile responsive</li><li>Basic SEO</li><li>Email support</li></ul><button class="ghost" onclick="openWizard()">Start building</button></div>
+    <div class="card price pop"><div class="tag">MOST POPULAR</div><h3>Growth</h3><div class="money">$39 <span>/month</span></div><p style="color:#88899a;font-size:12px">Everything you need to grow.</p><ul><li>Everything in Starter</li><li>AI blog writer</li><li>Booking & appointments</li><li>Advanced contact forms</li><li>Priority support</li></ul><button class="primary" onclick="openWizard()">Start building</button></div>
+    <div class="card price"><h3>Pro</h3><div class="money">$79 <span>/month</span></div><p style="color:#88899a;font-size:12px">For serious business growth.</p><ul><li>Everything in Growth</li><li>E-commerce tools</li><li>Advanced SEO</li><li>Analytics</li><li>Priority support</li></ul><button class="ghost" onclick="openWizard()">Start building</button></div>
+  </div>
+</section>
+
+<section class="container"><div class="cta"><h2>Your next website starts with <span class="gradient">one idea.</span></h2><p>Tell us what you do. We'll handle the rest.</p><button class="primary" onclick="openWizard()">Build My Website ✦</button></div></section>
+</main>
+
+
+<section class="container" id="generatedSite" style="display:none;padding-top:25px">
+  <div class="sectionhead" style="margin-bottom:25px">
+    <div class="eyebrow">AI website studio</div>
+    <h2>Your site is <span class="gradient">ready.</span></h2>
+    <p>Review the generated website below. You can ask the AI to change the copy or regenerate the design.</p>
+  </div>
+  <div class="studio">
+    <div class="studio-toolbar">
+      <div><strong id="studioName">Website Preview</strong><span id="studioStatus"> • AI generated</span></div>
+      <div class="studio-actions">
+        <button class="ghost" onclick="openEditor()">✦ Edit with AI</button>
+        <button class="primary" onclick="alert('Publishing will be connected to your hosting/domain provider in the production version.')">Publish Website →</button>
+      </div>
+    </div>
+    <div class="generated-page" id="generatedPage"></div>
+  </div>
+</section>
+
+<div class="modal" id="editorModal">
+  <div class="wizard">
+    <div class="wizardtop"><div><div class="eyebrow">AI editor</div><h2 style="font-family:'Space Grotesk';margin:12px 0 0">What should we change?</h2></div><button class="close" onclick="closeEditor()">×</button></div>
+    <p style="color:#9293a4;font-size:13px">Describe the change in plain English. For example: “Make the headline more premium and change the CTA to Book Now.”</p>
+    <div class="field" style="margin-top:18px"><textarea id="editInstruction" placeholder="Make the website..."></textarea></div>
+    <div class="wizardactions"><button class="back" onclick="closeEditor()">Cancel</button><button class="next" onclick="editWithAI()">Apply change ✦</button></div>
+    <div id="editLoading" style="display:none;text-align:center;padding:20px;color:#a9aaba">Updating your website...</div>
+  </div>
+</div>
+<footer class="container footer"><span>© 2026 SiteForge AI</span><span>Built for businesses that want to stand out.</span></footer>
+
+<div class="modal" id="modal">
+  <div class="wizard">
+    <div class="wizardtop"><div class="brand"><div class="logo"><i></i></div><span>SITEFORGE <em>AI</em></span></div><button class="close" onclick="closeWizard()">×</button></div>
+    <div class="progress"><i id="progress"></i></div>
+
+    <div class="step active" data-step="1">
+      <h2>Let's build your website.</h2><p>First, tell us the basics.</p>
+      <div class="formgrid">
+        <div class="field"><label>Business name</label><input id="biz" placeholder="e.g. Luna Café"></div>
+        <div class="field"><label>Business type</label><input id="type" placeholder="e.g. Coffee shop"></div>
+        <div class="field full"><label>What does your business do?</label><textarea id="desc" placeholder="Tell us what you sell, who you serve, and what makes you different."></textarea></div>
+      </div>
+    </div>
+
+    <div class="step" data-step="2">
+      <h2>What should customers do?</h2><p>We'll build the site around your main goal.</p>
+      <div class="choices" id="goals"><button class="choice" onclick="selectChoice(this)">Book an appointment</button><button class="choice" onclick="selectChoice(this)">Call / message us</button><button class="choice" onclick="selectChoice(this)">Buy products</button><button class="choice" onclick="selectChoice(this)">Visit our location</button><button class="choice" onclick="selectChoice(this)">Get a quote</button></div>
+      <div class="formgrid" style="margin-top:22px"><div class="field"><label>City / area</label><input id="city" placeholder="e.g. Boston, MA"></div><div class="field"><label>Phone or email</label><input id="contact" placeholder="Contact customers can use"></div></div>
+    </div>
+
+    <div class="step" data-step="3">
+      <h2>Pick your vibe.</h2><p>Choose a direction. The AI will do the designing.</p>
+      <div class="choices" id="styles"><button class="choice" onclick="selectChoice(this)">Modern</button><button class="choice" onclick="selectChoice(this)">Luxury</button><button class="choice" onclick="selectChoice(this)">Bold</button><button class="choice" onclick="selectChoice(this)">Minimal</button><button class="choice" onclick="selectChoice(this)">Friendly</button><button class="choice" onclick="selectChoice(this)">Classic</button></div>
+      <div class="field" style="margin-top:20px"><label>Brand colors (optional)</label><input id="colors" placeholder="e.g. black, gold, cream"></div>
+    </div>
+
+    <div class="build" id="build"><div class="loader"></div><h2>SiteForge is building your site...</h2><p id="buildText">Analyzing your business</p></div>
+
+    <div class="result" id="result">
+      <div class="success">✓ WEBSITE GENERATED</div>
+      <div class="preview"><div style="font-size:10px;color:#858698">SITEFORGE STUDIO</div><h3 id="outName">Your Business</h3><p id="outDesc">Your new website is ready.</p><span class="mini" id="outCta">Get Started</span></div>
+      <div class="actions"><button class="primary" onclick="closeWizard();showGenerated()">Open Website Studio →</button><button class="ghost" onclick="resetWizard()">Build another</button></div>
+    </div>
+
+    <div class="wizardactions" id="wizardActions"><button class="back" onclick="prevStep()">Back</button><button class="next" onclick="nextStep()">Continue →</button></div>
+  </div>
+</div>
+
+<script>
+let step=1;
+function openWizard(){document.getElementById('modal').classList.add('show');step=1;updateWizard()}
+function closeWizard(){document.getElementById('modal').classList.remove('show')}
+function updateWizard(){
+  document.querySelectorAll('.step').forEach(x=>x.classList.remove('active'));
+  const s=document.querySelector(`.step[data-step="${step}"]`); if(s)s.classList.add('active');
+  document.getElementById('progress').style.width=(step/3*100)+'%';
+  document.querySelector('.back').style.visibility=step===1?'hidden':'visible';
+}
+function selectChoice(el){[...el.parentElement.children].forEach(x=>x.classList.remove('selected'));el.classList.add('selected')}
+async function nextStep(){
+  if(step<3){step++;updateWizard();return}
+  document.querySelectorAll('.step').forEach(x=>x.classList.remove('active'));
+  document.getElementById('wizardActions').style.display='none';
+  document.getElementById('build').style.display='block';
+
+  const texts=['Analyzing your business','Writing your website copy','Designing your pages','Polishing the final result'];
+  let i=0;
+  document.getElementById('buildText').textContent=texts[0];
+  const t=setInterval(()=>{document.getElementById('buildText').textContent=texts[Math.min(++i,texts.length-1)]},650);
+
+  const selectedGoal=document.querySelector('#goals .selected');
+  const selectedStyle=document.querySelector('#styles .selected');
+
+  const payload={
+    businessName:document.getElementById('biz').value.trim(),
+    businessType:document.getElementById('type').value.trim(),
+    description:document.getElementById('desc').value.trim(),
+    goal:selectedGoal ? selectedGoal.textContent : 'Get more customers',
+    location:document.getElementById('city').value.trim(),
+    contact:document.getElementById('contact').value.trim(),
+    style:selectedStyle ? selectedStyle.textContent : 'Modern',
+    colors:document.getElementById('colors').value.trim()
+  };
+
+  try{
+    const response=await fetch('/api/generate',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(payload)
+    });
+    const data=await response.json();
+    if(!response.ok) throw new Error(data.error || 'Generation failed');
+
+    clearInterval(t);
+    document.getElementById('build').style.display='none';
+    document.getElementById('result').style.display='block';
+
+    const site=data.website;
+    currentWebsite=site;
+    document.getElementById('outName').textContent=site.businessName || payload.businessName || 'Your Business';
+    document.getElementById('outDesc').textContent=site.subheadline || site.description || payload.description || 'A polished website designed around your business.';
+    document.getElementById('outCta').textContent=site.cta || payload.goal || 'Get Started';
+  }catch(err){
+    clearInterval(t);
+    document.getElementById('build').style.display='none';
+    document.getElementById('wizardActions').style.display='flex';
+    alert('Could not generate the website. Make sure the server is running and OPENAI_API_KEY is configured.\\n\\n'+err.message);
+  }
+}
+function prevStep(){if(step>1){step--;updateWizard()}}
+function resetWizard(){document.getElementById('result').style.display='none';document.getElementById('wizardActions').style.display='flex';step=1;updateWizard()}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeWizard()});
+
+let currentWebsite=null;
+
+function escapeHtml(value){
+  return String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+}
+
+function showGenerated(){
+  if(!currentWebsite)return;
+  const s=currentWebsite;
+  document.getElementById('generatedSite').style.display='block';
+  document.getElementById('studioName').textContent=s.businessName || 'Your Website';
+  const services=(s.services||[]).map(x=>`<div class="service-card"><h3>${escapeHtml(x.name)}</h3><p>${escapeHtml(x.description)}</p></div>`).join('');
+  const faqs=(s.faq||[]).map(x=>`<div class="faq"><strong>${escapeHtml(x.question)}</strong><p>${escapeHtml(x.answer)}</p></div>`).join('');
+  document.getElementById('generatedPage').innerHTML=`
+    <div class="gen-nav"><div class="gen-brand">${escapeHtml(s.businessName)}</div><div class="gen-nav-links">HOME　 ABOUT　 SERVICES　 FAQ　 CONTACT</div></div>
+    <div class="gen-hero">
+      <div><h1>${escapeHtml(s.headline)}</h1><p>${escapeHtml(s.subheadline)}</p><a class="gen-cta">${escapeHtml(s.cta)}</a></div>
+      <div class="gen-visual">AI-generated visual area</div>
+    </div>
+    <div class="gen-section"><h2>About ${escapeHtml(s.businessName)}</h2><p>${escapeHtml(s.about)}</p></div>
+    <div class="gen-section"><h2>What we offer</h2><p>${escapeHtml(s.description)}</p><div class="service-grid">${services}</div></div>
+    <div class="gen-section"><h2>Frequently asked questions</h2><div class="faq-grid">${faqs}</div></div>
+    <div class="gen-contact"><div><strong>${escapeHtml(s.businessName)}</strong><br><span>${escapeHtml(s.seoDescription)}</span></div><span>${escapeHtml(s.cta)} →</span></div>
+  `;
+  document.getElementById('generatedSite').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function openEditor(){document.getElementById('editorModal').classList.add('show')}
+function closeEditor(){document.getElementById('editorModal').classList.remove('show')}
+async function editWithAI(){
+  const instruction=document.getElementById('editInstruction').value.trim();
+  if(!instruction || !currentWebsite)return;
+  document.getElementById('editLoading').style.display='block';
+  try{
+    const r=await fetch('/api/edit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({website:currentWebsite,instruction})});
+    const data=await r.json();
+    if(!r.ok)throw new Error(data.error||'Edit failed');
+    currentWebsite=data.website;
+    document.getElementById('editInstruction').value='';
+    closeEditor();showGenerated();
+  }catch(e){alert(e.message)}
+  finally{document.getElementById('editLoading').style.display='none'}
+}
+
+</script>
+</body>
+</html>

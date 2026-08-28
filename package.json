@@ -1,11 +1,8 @@
 {
-  "name": "siteforge-ai",
+  "name": "siteforge-ai-v3",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "scripts": {
-    "start": "node server.mjs"
-  },
   "dependencies": {
     "openai": "^5.0.0"
   }
