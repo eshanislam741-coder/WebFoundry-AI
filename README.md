@@ -1,24 +1,23 @@
-# SiteForge AI V3 — Vercel-ready
+# SiteForge AI V4 — Payments
 
-This version is structured for easy deployment to Vercel.
+V4 adds Stripe subscription checkout to SiteForge.
 
-## Files
+Included:
+- AI generation + AI editing
+- Stripe Checkout for Starter / Growth / Pro
+- Server-side Stripe secret key
+- Server-side subscription verification
+- Publish button locked until payment is verified
 
-- `index.html` — SiteForge landing page + onboarding + website studio
-- `api/generate.js` — Vercel serverless function that generates a website
-- `api/edit.js` — Vercel serverless function that edits generated website content
-- `api/_schema.js` — shared structured-output schema
-- `package.json` — dependencies
-- `vercel.json` — Vercel routing
-- `.env.example` — example environment variables
+Set these Vercel environment variables:
+OPENAI_API_KEY
+STRIPE_SECRET_KEY
+STRIPE_PRICE_STARTER
+STRIPE_PRICE_GROWTH
+STRIPE_PRICE_PRO
 
-## Deploy
+Create recurring monthly Stripe prices for $19, $39, and $79 and copy their Price IDs into Vercel.
 
-1. Upload these files to a GitHub repository.
-2. Import the repository into Vercel.
-3. In Vercel → Project Settings → Environment Variables, add:
-   - `OPENAI_API_KEY`
-   - optionally `OPENAI_MODEL`
-4. Redeploy if Vercel asks you to.
+Use Stripe test mode first.
 
-Never put the API key inside `index.html`.
+V4 verifies payment but does not yet permanently host each customer-generated website. The next version needs persistent database storage plus public customer URLs/custom domains.
