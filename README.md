@@ -1,6 +1,6 @@
-# SiteForge AI V4 — Payments
+# WebFoundry AI V4 — Payments
 
-V4 adds Stripe subscription checkout to SiteForge.
+V4 adds Stripe subscription checkout to WebFoundry.
 
 Included:
 - AI generation + AI editing

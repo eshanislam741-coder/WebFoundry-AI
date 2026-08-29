@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SiteForge AI — Build a business website in minutes</title>
-<meta name="description" content="SiteForge AI turns your business information into a polished website in minutes.">
+<title>WebFoundry AI — Build a business website in minutes</title>
+<meta name="description" content="WebFoundry AI turns your business information into a polished website in minutes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -53,7 +53,7 @@ section{padding:88px 0}.sectionhead{text-align:center;max-width:680px;margin:0 a
   <div>
     <div class="eyebrow"><span class="pulse"></span> AI builds. You grow.</div>
     <h1>The AI website builder that builds <span class="gradient">your business.</span></h1>
-    <p>Answer a few questions about your business. SiteForge turns your information into a polished, mobile-ready website designed to help you get customers.</p>
+    <p>Answer a few questions about your business. WebFoundry turns your information into a polished, mobile-ready website designed to help you get customers.</p>
     <div class="actions"><button class="primary" onclick="openWizard()">Create My Website ✦</button><a class="ghost" href="#how">See how it works</a></div>
     <div class="trust"><span>✓ <b>No code</b></span><span>✦ <b>AI powered</b></span><span>▣ <b>Mobile ready</b></span><span>⌁ <b>SEO ready</b></span></div>
   </div>
@@ -76,10 +76,10 @@ section{padding:88px 0}.sectionhead{text-align:center;max-width:680px;margin:0 a
 </section>
 
 <section id="how" class="container">
-  <div class="sectionhead"><div class="eyebrow">Easy as 1–2–3</div><h2>From info to <span class="gradient">incredible.</span></h2><p>No templates to fight with. Tell SiteForge about your business and let the AI handle the heavy lifting.</p></div>
+  <div class="sectionhead"><div class="eyebrow">Easy as 1–2–3</div><h2>From info to <span class="gradient">incredible.</span></h2><p>No templates to fight with. Tell WebFoundry about your business and let the AI handle the heavy lifting.</p></div>
   <div class="steps">
     <div class="card"><div class="num">01</div><div class="icon">☷</div><h3>Tell us about your business</h3><p>Enter your business name, services, location, contact details, goals and the style you want.</p></div>
-    <div class="card"><div class="num">02</div><div class="icon">✦</div><h3>AI builds your website</h3><p>SiteForge generates your structure, copy, calls-to-action and visual direction around your business.</p></div>
+    <div class="card"><div class="num">02</div><div class="icon">✦</div><h3>AI builds your website</h3><p>WebFoundry generates your structure, copy, calls-to-action and visual direction around your business.</p></div>
     <div class="card"><div class="num">03</div><div class="icon">↗</div><h3>Customize & publish</h3><p>Review the result, make changes, connect your domain and put your new site online.</p></div>
   </div>
 </section>
@@ -138,10 +138,10 @@ section{padding:88px 0}.sectionhead{text-align:center;max-width:680px;margin:0 a
 <div class="modal" id="paymentModal">
   <div class="wizard">
     <div class="wizardtop">
-      <div><div class="eyebrow">Unlock publishing</div><h2 style="font-family:'Space Grotesk';margin:12px 0 0">Choose a SiteForge plan.</h2></div>
+      <div><div class="eyebrow">Unlock publishing</div><h2 style="font-family:'Space Grotesk';margin:12px 0 0">Choose a WebFoundry plan.</h2></div>
       <button class="close" onclick="closePayment()">×</button>
     </div>
-    <p style="color:#9293a4;font-size:13px">Checkout is handled securely. Once a subscription is verified, SiteForge unlocks publishing.</p>
+    <p style="color:#9293a4;font-size:13px">Checkout is handled securely. Once a subscription is verified, WebFoundry unlocks publishing.</p>
     <div class="pricing" style="grid-template-columns:repeat(3,1fr);margin-top:20px">
       <div class="card price"><h3>Starter</h3><div class="money">$19 <span>/month</span></div><button class="ghost" onclick="checkout('starter')">Choose Starter</button></div>
       <div class="card price pop"><div class="tag">POPULAR</div><h3>Growth</h3><div class="money">$39 <span>/month</span></div><button class="primary" onclick="checkout('growth')">Choose Growth</button></div>
@@ -150,7 +150,7 @@ section{padding:88px 0}.sectionhead{text-align:center;max-width:680px;margin:0 a
     <div id="payStatus" style="margin-top:18px;color:#9a9bad;font-size:12px"></div>
   </div>
 </div>
-<footer class="container footer"><span>© 2026 SiteForge AI</span><span>Built for businesses that want to stand out.</span></footer>
+<footer class="container footer"><span>© 2026 WebFoundry AI</span><span>Built for businesses that want to stand out.</span></footer>
 
 <div class="modal" id="modal">
   <div class="wizard">
@@ -178,7 +178,7 @@ section{padding:88px 0}.sectionhead{text-align:center;max-width:680px;margin:0 a
       <div class="field" style="margin-top:20px"><label>Brand colors (optional)</label><input id="colors" placeholder="e.g. black, gold, cream"></div>
     </div>
 
-    <div class="build" id="build"><div class="loader"></div><h2>SiteForge is building your site...</h2><p id="buildText">Analyzing your business</p></div>
+    <div class="build" id="build"><div class="loader"></div><h2>WebFoundry is building your site...</h2><p id="buildText">Analyzing your business</p></div>
 
     <div class="result" id="result">
       <div class="success">✓ WEBSITE GENERATED</div>
@@ -329,14 +329,14 @@ async function verifyCheckoutFromUrl(){
   const data=await r.json();
   if(data.active){
     subscriptionActive=true;
-    sessionStorage.setItem('siteforge_checkout_session',id);
+    sessionStorage.setItem('webfoundry_checkout_session',id);
     history.replaceState({},'',location.pathname);
     alert('Payment confirmed. Publishing is unlocked.');
   }
 }
 
 async function restoreCheckout(){
-  const id=sessionStorage.getItem('siteforge_checkout_session');
+  const id=sessionStorage.getItem('webfoundry_checkout_session');
   if(!id) return;
   try{
     const r=await fetch('/api/verify-session?session_id='+encodeURIComponent(id));
